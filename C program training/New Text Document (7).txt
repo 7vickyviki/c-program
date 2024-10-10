@@ -1,0 +1,22 @@
+#include <stdio.h>
+int max(int a, int b) {
+    return (a > b) ? a : b;
+}
+int findMaxRec(int arr[], int n) {
+    if (n == 1)
+        return arr[0];
+    return max(arr[n-1], findMaxRec(arr, n-1));
+}
+int main() {
+    int n;
+    printf("Enter the number of elements in the array: ");
+    scanf("%d", &n);
+    int arr[n];
+    printf("Enter the elements of the array:\n");
+    for (int i = 0; i < n; i++) {
+        scanf("%d", &arr[i]);
+    }
+    int largest = findMaxRec(arr, n);
+    printf("The largest element in the array is: %d\n", largest);
+    return 0;
+}

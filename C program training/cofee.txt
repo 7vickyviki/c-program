@@ -1,0 +1,45 @@
+#include<stdio.h>
+ 
+int main()
+{
+    int ch,quantity;
+    printf("\n\tMENU CARD");
+    printf("\n\t\t1.COFFEE        Rs:10");
+    printf("\n\t\t2.TEA           Rs:20");
+    printf("\n\t\t3.COLD COFFEE   Rs:35");
+    printf("\n\t\t4.MILK SHAKE    Rs:50");
+    printf("\n\n Enter Your choice  : ");
+    scanf("\n%d",&ch);
+    switch(ch)
+    {
+    case 1:
+        printf("\nYou have selected Coffee");
+        printf("\nEnter The quantity : ");
+        scanf("%d",&quantity);
+        printf("\nTotal amount : %d",(quantity*10));
+        break;
+     case 2:
+        printf("\nYou have selected Tea");
+        printf("\nEnter The quantity : ");
+        scanf("%d",&quantity);
+        printf("\nTotal amount : %d",(quantity*20));
+        break;
+     case 3:
+        printf("\nYou have selected Cold Coffee");
+        printf("\nEnter The quantity : ");
+        scanf("%d",&quantity);
+        printf("\nTotal amount : %d",(quantity*35));
+        break;
+     case 4:
+        printf("\nYou have selected Milk Shake");
+        printf("\nEnter The quantity : ");
+        scanf("%d",&quantity);
+        printf("\nTotal amount : %d",(quantity*50));
+        break;
+     default:
+          printf("\nInvalid Product Selection");
+          break;
+ 
+    }
+    return 0;
+}

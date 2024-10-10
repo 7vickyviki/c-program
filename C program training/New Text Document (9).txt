@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int sum(int a)
+
+{
+    int k=a;
+    return k;
+}
+void main()
+{int a=2;
+int v=sum(a*a*a);
+    printf("qube value=");
+    printf("%d",v);
+
+    
+}

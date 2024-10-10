@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+    float num;
+    int integerPart;
+    float ceilValue, floorValue;
+
+    printf("Enter a float value: ");
+    scanf("%f", &num);
+
+    integerPart = (int)num; 
+    ceilValue = ceil(num);  
+    floorValue = floor(num);
+
+    printf("Integer : %d\n", integerPart);
+    printf("Highest value : %.2f\n", ceilValue);
+    printf("Lowest value : %.2f\n", floorValue);
+
+    return 0;
+}

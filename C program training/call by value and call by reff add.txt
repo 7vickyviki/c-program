@@ -1,0 +1,21 @@
+#include<stdio.h>
+int swap(int *x,int *y);
+int main()
+{
+    int a=5,b=7,c,d;
+    printf("\n%d\n%d",a,b);
+    swap(&a,&b);
+    
+    printf("\n%d\n%d",a,b);
+    d=a+b;
+    printf("\n%d",d);
+}
+    int swap(int *x,int *y)
+    {
+        int temp=*x;
+        *x=*y;
+        *y=temp;
+        return 0;
+        
+    
+}

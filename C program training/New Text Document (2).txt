@@ -1,0 +1,73 @@
+#include <stdio.h>
+int main()
+{
+ int a,b,qty,rate,total;
+ 
+ printf("\nMENU CARD for veg\n select your veg food \n1.SAMBAR SAADAM \n2.THAIR SAADAM \n3.PONGAL \n4.IDLI");
+ 
+ scanf("%d",&a);
+ printf("\nMENU CARD for non veg\nselact your non vedge food\n4.CHIKKEN BRIYANI\n5.MUTTON BRIYAANI\n6.BEEF BRIANI\n7.CHICKEN RISE");
+ scanf("%d",&b);
+ printf("\n");
+ switch(a)
+ {
+  case 1:
+    printf("\nYou have selected sambar saadam.\n Enter the quantity :");
+    scanf("%d",&qty);
+    rate=50;
+    total=qty*rate;
+    printf("\nTotal amount :%d",total);
+    break;
+  case 2:
+    printf("\nYou have selected tair saadam.\n Enter the quantity :");
+    scanf("%d",&qty);
+    rate=10;
+    total=qty*rate;
+    printf("\nTotal amount :%d",total);
+    break;
+  case 3:
+    printf("\nYou have selected pongal.\n Enter the quantity :");
+    scanf("%d",&qty);
+    rate=15;
+    total=qty*rate;
+    printf("\nTotal amount :%d",total);
+    break;
+  case 4:
+    printf("\nYou have selected idli .\n Enter the quantity :");
+    scanf("%d",&qty);
+    rate=20;
+    total=qty*rate;
+    printf("\nTotal amount :%d",total);
+    break;}
+  switch(b)
+  { case 1:
+    printf("\nYou have selected chicken briyani.\n Enter the quantity :");
+    scanf("%d",&qty);
+    rate=120;
+    total=qty*rate;
+    printf("\nTotal amount :%d",total);
+    break;
+  case 2:
+    printf("\nYou have selected mutton briyaani.\n Enter the quantity :");
+    scanf("%d",&qty);
+    rate=400;
+    total=qty*rate;
+    printf("\nTotal amount :%d",total);
+    break;
+  case 3:
+    printf("\nYou have selected beef briyani.\n Enter the quantity :");
+    scanf("%d",&qty);
+    rate=250;
+    total=qty*rate;
+    printf("\nTotal amount :%d",total);
+    break;
+  case 4:
+    printf("\nYou have selected chicken rise .\n Enter the quantity :");
+    scanf("%d",&qty);
+    rate=100;
+    total=qty*rate;
+    printf("\nTotal amount :%d",total);
+    break;
+ }
+return 0;
+}

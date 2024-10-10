@@ -1,0 +1,31 @@
+#include <stdio.h>
+
+struct name {
+    char a[100];
+};
+
+int main() {
+    struct name s1, s2, s3, s4, s5;
+
+    printf("Enter string for s1: ");
+    scanf("%s", s1.a);
+    printf("s1: %s\n", s1.a);
+
+    printf("Enter string for s2: ");
+    scanf("%s", s2.a);
+    printf("s2: %s\n", s2.a);
+
+    printf("Enter string for s3: ");
+    scanf("%s", s3.a);
+    printf("s3: %s\n", s3.a);
+
+    printf("Enter string for s4: ");
+    scanf("%s", s4.a);
+    printf("s4: %s\n", s4.a);
+
+    printf("Enter string for s5: ");
+    scanf("%s", s5.a);
+    printf("s5: %s\n", s5.a);
+
+    return 0;
+}
